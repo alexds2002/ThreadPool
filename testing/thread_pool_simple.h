@@ -13,9 +13,6 @@
 #include <functional>
 #include <cinttypes>
 
-namespace CherryTest
-{
-
 class ThreadPoolSimple
 {
 public:
@@ -88,4 +85,3 @@ inline void ThreadPoolSimple::Add_Task(std::function<void()>&& func)
     m_condition_var.notify_one();
 }
 
-} /* namespace CherryTest */
